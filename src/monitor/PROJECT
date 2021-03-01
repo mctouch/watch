@@ -1,0 +1,7 @@
+domain: demo.watch.momenton.com.au
+repo: watch.momenton.com.au
+resources:
+- group: webapp
+  kind: AnnotationWatchlist
+  version: v1
+version: "2"

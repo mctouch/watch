@@ -1,0 +1,24 @@
+# permissions for end users to edit annotationwatchlists.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: annotationwatchlist-editor-role
+rules:
+- apiGroups:
+  - webapp.demo.watch.momenton.com.au
+  resources:
+  - annotationwatchlists
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - webapp.demo.watch.momenton.com.au
+  resources:
+  - annotationwatchlists/status
+  verbs:
+  - get

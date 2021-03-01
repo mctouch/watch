@@ -1,0 +1,7 @@
+apiVersion: webapp.demo.watch.momenton.com.au/v1
+kind: AnnotationWatchlist
+metadata:
+  name: annotationwatchlist-sample
+spec:
+  # Add fields here
+  foo: bar
